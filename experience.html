@@ -16,29 +16,29 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
 
     <style>
-           body {
-    margin: 0;
-    padding: 0;
+        html {
+            height: 100%;
+        }
 
-    min-height: 100vh;   /* 👈 IMPORTANT */
+        body {
+            margin: 0;
+            padding: 0;
+            min-height: 100vh;
 
-    background: linear-gradient(
-        rgba(15, 23, 42, 0.85),
-        rgba(15, 23, 42, 0.85)
-    ),
-    url('assets/images/bg.jpg');
+            background: linear-gradient(
+                rgba(15, 23, 42, 0.85),
+                rgba(15, 23, 42, 0.85)
+            ),
+            url('assets/images/bg.jpg');
 
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;  /* 👈 KEY FIX */
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
 
-    color: white;
-    font-family: 'Poppins', sans-serif;
-}
-html {
-    height: 100%;
-}
+            color: white;
+            font-family: 'Poppins', sans-serif;
+        }
 
         /* Navbar */
         .navbar-custom {
@@ -61,7 +61,7 @@ html {
         .card {
             background-color: #1e293b;
             border-radius: 12px;
-            box-shadow: 0 4px 20px rgba(0,0,0,0.3);
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
             transition: 0.3s;
         }
 
@@ -85,51 +85,52 @@ html {
 
 <body>
 
-<!-- NAVBAR -->
-<nav class="navbar-custom">
-    <a href="index.html">Home</a>
-    <a href="projects.html">Projects</a>
-    <a href="education.html">Education</a>
-    <a href="experience.html">Experience</a>
-</nav>
+    <!-- NAVBAR -->
+    <nav class="navbar-custom">
+        <a href="index.html">Home</a>
+        <a href="projects.html">Projects</a>
+        <a href="education.html">Education</a>
+        <a href="experience.html">Experience</a>
+    </nav>
 
-<div class="container pt-5 text-center">
-    <h1>Experience</h1>
-    <p>Hands-on experience building systems in AI, IoT, and software engineering</p>
-</div>
-
-<div class="container mt-5">
-
-    <!-- Technical Experience -->
-    <div class="card p-4 mb-4">
-        <h3>Technical Experience</h3>
-        <p>
-            Worked on multiple real-world projects across Machine Learning, IoT, Systems Programming, and AI.
-        </p>
-
-        <ul>
-            <li>Developed computer vision models using YOLOv8 for multi-object detection.</li>
-            <li>Built IoT systems using ESP8266, DHT11, and MQ135 sensors for air quality monitoring.</li>
-            <li>Engineered high-performance C++ systems using multi-threading and UDP networking.</li>
-            <li>Designed Transformer-based AI models for offline conversational systems.</li>
-        </ul>
+    <div class="container pt-5 text-center">
+        <h1>Experience</h1>
+        <p>Hands-on experience building systems in AI, IoT, and software engineering</p>
     </div>
 
-    <!-- Skills -->
-    <div class="card p-4 mb-4">
-        <h3>Skills & Tools</h3>
-        <ul>
-            <li><strong>Languages:</strong> C++, Python, JavaScript</li>
-            <li><strong>Technologies:</strong> Machine Learning, IoT, Blockchain</li>
-            <li><strong>Frameworks:</strong> Scikit-learn, YOLOv8</li>
-            <li><strong>Tools:</strong> Git, VS Code, Arduino IDE</li>
-        </ul>
+    <div class="container mt-5">
+
+        <!-- Technical Experience -->
+        <div class="card p-4 mb-4">
+            <h3>Technical Experience</h3>
+            <p>
+                Worked on multiple real-world projects across Machine Learning, IoT, Systems Programming, and AI.
+            </p>
+
+            <ul>
+                <li>Developed computer vision models using YOLOv8 for multi-object detection.</li>
+                <li>Built IoT systems using ESP8266, DHT11, and MQ135 sensors for air quality monitoring.</li>
+                <li>Engineered high-performance C++ systems using multi-threading and UDP networking.</li>
+                <li>Designed Transformer-based AI models for offline conversational systems.</li>
+            </ul>
+        </div>
+
+        <!-- Skills -->
+        <div class="card p-4 mb-4">
+            <h3>Skills & Tools</h3>
+
+            <ul>
+                <li><strong>Languages:</strong> C++, Python, JavaScript</li>
+                <li><strong>Technologies:</strong> Machine Learning, IoT, Blockchain</li>
+                <li><strong>Frameworks:</strong> Scikit-learn, YOLOv8</li>
+                <li><strong>Tools:</strong> Git, VS Code, Arduino IDE</li>
+            </ul>
+        </div>
+
     </div>
 
-</div>
-
-<!-- Bottom spacing -->
-<div style="height:50px;"></div>
+    <!-- Bottom spacing -->
+    <div style="height:50px;"></div>
 
 </body>
 </html>
