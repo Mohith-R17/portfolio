@@ -17,11 +17,38 @@
 
     <style>
         body {
-            background-color: #0f172a;
+            background: linear-gradient(
+                rgba(15, 23, 42, 0.85),
+                rgba(15, 23, 42, 0.85)
+            ),
+            url('assets/images/bg.jpg');
+
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+
             color: white;
             font-family: 'Poppins', sans-serif;
         }
 
+        /* Navbar */
+        .navbar-custom {
+            text-align: center;
+            padding: 20px;
+            font-size: 18px;
+        }
+
+        .navbar-custom a {
+            margin: 10px;
+            color: white;
+            text-decoration: none;
+        }
+
+        .navbar-custom a:hover {
+            color: #38bdf8;
+        }
+
+        /* Cards */
         .card {
             background-color: #1e293b;
             border-radius: 12px;
@@ -47,6 +74,14 @@
 </head>
 
 <body>
+
+<!-- NAVBAR -->
+<nav class="navbar-custom">
+    <a href="index.html">Home</a>
+    <a href="projects.html">Projects</a>
+    <a href="education.html">Education</a>
+    <a href="experience.html">Experience</a>
+</nav>
 
 <div class="container pt-5 text-center">
     <h1>My Projects</h1>
@@ -106,6 +141,9 @@
 
     </div>
 </div>
+
+<!-- Bottom spacing -->
+<div style="height:50px;"></div>
 
 </body>
 </html>

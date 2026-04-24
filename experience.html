@@ -9,7 +9,7 @@
     <!-- Bootstrap -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" />
 
-    <!-- Your styles -->
+    <!-- Custom CSS -->
     <link rel="stylesheet" href="assets/css/style.css" />
 
     <!-- Font -->
@@ -17,15 +17,47 @@
 
     <style>
         body {
-            font-family: 'Poppins', sans-serif;
-            background-color: #0f172a;
+            background: linear-gradient(
+                rgba(15, 23, 42, 0.85),
+                rgba(15, 23, 42, 0.85)
+            ),
+            url('assets/images/bg.jpg');
+
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+
             color: white;
+            font-family: 'Poppins', sans-serif;
         }
 
+        /* Navbar */
+        .navbar-custom {
+            text-align: center;
+            padding: 20px;
+            font-size: 18px;
+        }
+
+        .navbar-custom a {
+            margin: 10px;
+            color: white;
+            text-decoration: none;
+        }
+
+        .navbar-custom a:hover {
+            color: #38bdf8;
+        }
+
+        /* Cards */
         .card {
             background-color: #1e293b;
             border-radius: 12px;
             box-shadow: 0 4px 20px rgba(0,0,0,0.3);
+            transition: 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
         }
 
         h1 {
@@ -44,9 +76,17 @@
 
 <body>
 
+<!-- NAVBAR -->
+<nav class="navbar-custom">
+    <a href="index.html">Home</a>
+    <a href="projects.html">Projects</a>
+    <a href="education.html">Education</a>
+    <a href="experience.html">Experience</a>
+</nav>
+
 <div class="container pt-5 text-center">
     <h1>Experience</h1>
-    <p>My technical experience and work</p>
+    <p>Hands-on experience building systems in AI, IoT, and software engineering</p>
 </div>
 
 <div class="container mt-5">
@@ -78,6 +118,9 @@
     </div>
 
 </div>
+
+<!-- Bottom spacing -->
+<div style="height:50px;"></div>
 
 </body>
 </html>
