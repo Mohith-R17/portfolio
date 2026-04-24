@@ -19,19 +19,28 @@
 
     <style>
         body {
-            background: linear-gradient(
-                rgba(15, 23, 42, 0.85),
-                rgba(15, 23, 42, 0.85)
-            ),
-            url('assets/images/bg.jpg');
+    margin: 0;
+    padding: 0;
 
-            background-size: cover;
-            background-position: center;
-            background-repeat: no-repeat;
+    min-height: 100vh;   /* 👈 IMPORTANT */
 
-            color: white;
-            font-family: 'Poppins', sans-serif;
-        }
+    background: linear-gradient(
+        rgba(15, 23, 42, 0.85),
+        rgba(15, 23, 42, 0.85)
+    ),
+    url('assets/images/bg.jpg');
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;  /* 👈 KEY FIX */
+
+    color: white;
+    font-family: 'Poppins', sans-serif;
+}
+html {
+    height: 100%;
+}
 
         /* Navbar */
         .navbar-custom {
