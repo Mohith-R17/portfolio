@@ -1,135 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <title>Mohith | Experience</title>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Experience</title>
 
-    <!-- Bootstrap -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" />
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
 
-    <!-- Custom CSS -->
-    <link rel="stylesheet" href="assets/css/style.css" />
+<style>
+html, body { margin:0; height:100%; color:white; font-family:Poppins; }
 
-    <!-- Font -->
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
-
-    <style>
-           body {
-    margin: 0;
-    padding: 0;
-
-    min-height: 100vh;   /* 👈 IMPORTANT */
-
-    background: linear-gradient(
-        rgba(15, 23, 42, 0.85),
-        rgba(15, 23, 42, 0.85)
-    ),
-    url('assets/images/bg.jpg');
-
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;  /* 👈 KEY FIX */
-
-    color: white;
-    font-family: 'Poppins', sans-serif;
-}
-html {
-    height: 100%;
+body::before {
+    content:"";
+    position:fixed;
+    width:100%;
+    height:100%;
+    background: linear-gradient(rgba(15,23,42,0.85), rgba(15,23,42,0.85)),
+                url('assets/images/bg.jpg');
+    background-size:cover;
+    z-index:-1;
 }
 
-        /* Navbar */
-        .navbar-custom {
-            text-align: center;
-            padding: 20px;
-            font-size: 18px;
-        }
+.navbar-custom { text-align:center; padding:20px; }
+.navbar-custom a { color:white; margin:10px; }
 
-        .navbar-custom a {
-            margin: 10px;
-            color: white;
-            text-decoration: none;
-        }
-
-        .navbar-custom a:hover {
-            color: #38bdf8;
-        }
-
-        /* Cards */
-        .card {
-            background-color: #1e293b;
-            border-radius: 12px;
-            box-shadow: 0 4px 20px rgba(0,0,0,0.3);
-            transition: 0.3s;
-        }
-
-        .card:hover {
-            transform: translateY(-5px);
-        }
-
-        h1 {
-            font-weight: 600;
-        }
-
-        h3 {
-            color: #38bdf8;
-        }
-
-        ul li {
-            margin-bottom: 8px;
-        }
-    </style>
+.card { background:#1e293b; padding:20px; margin:10px; }
+</style>
 </head>
 
 <body>
 
-<!-- NAVBAR -->
 <nav class="navbar-custom">
-    <a href="index.html">Home</a>
-    <a href="projects.html">Projects</a>
-    <a href="education.html">Education</a>
-    <a href="experience.html">Experience</a>
+<a href="index.html">Home</a>
+<a href="projects.html">Projects</a>
+<a href="education.html">Education</a>
+<a href="experience.html">Experience</a>
 </nav>
 
-<div class="container pt-5 text-center">
-    <h1>Experience</h1>
-    <p>Hands-on experience building systems in AI, IoT, and software engineering</p>
+<div class="container">
+<h1>Experience</h1>
+
+<div class="card">
+Worked on ML, IoT, and Systems projects.
 </div>
 
-<div class="container mt-5">
-
-    <!-- Technical Experience -->
-    <div class="card p-4 mb-4">
-        <h3>Technical Experience</h3>
-        <p>
-            Worked on multiple real-world projects across Machine Learning, IoT, Systems Programming, and AI.
-        </p>
-
-        <ul>
-            <li>Developed computer vision models using YOLOv8 for multi-object detection.</li>
-            <li>Built IoT systems using ESP8266, DHT11, and MQ135 sensors for air quality monitoring.</li>
-            <li>Engineered high-performance C++ systems using multi-threading and UDP networking.</li>
-            <li>Designed Transformer-based AI models for offline conversational systems.</li>
-        </ul>
-    </div>
-
-    <!-- Skills -->
-    <div class="card p-4 mb-4">
-        <h3>Skills & Tools</h3>
-        <ul>
-            <li><strong>Languages:</strong> C++, Python, JavaScript</li>
-            <li><strong>Technologies:</strong> Machine Learning, IoT, Blockchain</li>
-            <li><strong>Frameworks:</strong> Scikit-learn, YOLOv8</li>
-            <li><strong>Tools:</strong> Git, VS Code, Arduino IDE</li>
-        </ul>
-    </div>
-
 </div>
-
-<!-- Bottom spacing -->
-<div style="height:50px;"></div>
 
 </body>
 </html>
