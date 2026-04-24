@@ -28,13 +28,39 @@
             color: #38bdf8;
         }
 
-        img {
+        img.profile {
             border: 3px solid #38bdf8;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+
+        nav {
+            text-align: center;
+            padding: 20px;
+            font-size: 18px;
+        }
+
+        nav a {
+            margin: 10px;
+            color: white;
+            text-decoration: none;
+        }
+
+        nav a:hover {
+            color: #38bdf8;
         }
     </style>
 </head>
 
 <body>
+
+<!-- NAVBAR -->
+<nav>
+    <a href="index.html">Home</a>
+    <a href="projects.html">Projects</a>
+    <a href="education.html">Education</a>
+    <a href="experience.html">Experience</a>
+</nav>
 
 <div id="home">
     <section class="center">
@@ -45,57 +71,58 @@
 <center>
     <div class="text col-sm-6" style="margin-top: 120px;">
 
+        <!-- NAME -->
         <h2>
-            Hi 
-            <span class="wave">
-                <img src="assets/images/Hand.gif" width="35px">
-            </span>, 
-            I'm <span class="header">MOHITH</span>
+            Hi 👋, I'm <span class="header">MOHITH</span>
         </h2>
 
+        <!-- PROFILE IMAGE -->
+        <img src="assets/images/profile.jpg"
+             alt="profile"
+             class="profile"
+             height="200"
+             width="200">
+
+        <br/><br/>
+
+        <!-- SKILLS -->
+        <p>
+            I am into <br>
+            <b>Data Structures • Machine Learning • Web Development • Blockchain</b>
+        </p>
+
+        <!-- TAGLINE -->
+        <p>
+            Computer Science Student | Machine Learning & Systems Developer | Building Real-World Projects
+        </p>
+
+        <!-- SOCIAL LINKS -->
         <div>
-
-            <!-- PROFILE IMAGE -->
-            <img src="assets/images/profile.jpg"
-                 alt="profile"
-                 class="rounded-circle"
-                 height="200"
-                 width="200">
-
-            <br/><br/>
-
-            <!-- SKILLS -->
-            <p>
-                I am into <br>
-                <b>Data Structures • Machine Learning • Web Development • Blockchain</b>
-            </p>
-
-            <!-- TAGLINE -->
-            <p>
-                Aspiring Software Engineer focused on building efficient solutions using DSA, ML and Web Technologies.
-            </p>
-
-            <!-- SOCIAL -->
-            <div>
-                <a href="https://www.linkedin.com/in/mohith-r-0763a72a4/" target="_blank">
-                    <i class="fab fa-linkedin fa-2x"></i>
-                </a>
-
-                &nbsp;&nbsp;
-
-                <a href="https://github.com/Mohith-R17" target="_blank">
-                    <i class="fab fa-github fa-2x"></i>
-                </a>
-            </div>
-
-            <br/>
-
-            <!-- RESUME -->
-            <a href="resume.pdf" download class="btn btn-primary">
-                Download Resume
+            <a href="https://www.linkedin.com/in/mohith-r-0763a72a4/" target="_blank">
+                <i class="fab fa-linkedin fa-2x"></i>
             </a>
 
+            &nbsp;&nbsp;
+
+            <a href="https://github.com/Mohith-R17" target="_blank">
+                <i class="fab fa-github fa-2x"></i>
+            </a>
         </div>
+
+        <br/>
+
+        <!-- RESUME BUTTON -->
+        <a href="resume.pdf" download class="btn btn-primary">
+            Download Resume
+        </a>
+
+        <br><br>
+
+        <!-- PROJECTS BUTTON -->
+        <a href="projects.html" class="btn btn-outline-light">
+            View My Projects
+        </a>
+
     </div>
 </center>
 
