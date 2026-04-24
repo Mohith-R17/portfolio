@@ -1,25 +1,56 @@
 <!DOCTYPE html>
-<html lang="en" light-mode="dark">
+<html lang="en">
 
 <head>
     <title>Mohith | Projects</title>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <meta name="description" content="Mohith - Projects Portfolio" />
-
+    <!-- Bootstrap -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" />
-    <link rel="stylesheet" href="assets/css/project.css" />
+
+    <!-- Custom CSS -->
     <link rel="stylesheet" href="assets/css/style.css" />
+
+    <!-- Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+    <style>
+        body {
+            background-color: #0f172a;
+            color: white;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        .card {
+            background-color: #1e293b;
+            border-radius: 12px;
+            transition: 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+        }
+
+        h1 {
+            font-weight: 600;
+        }
+
+        h4 {
+            color: #38bdf8;
+        }
+
+        a {
+            color: #38bdf8;
+        }
+    </style>
 </head>
 
 <body>
 
-<div class="container pt-5">
-    <div class="text-center">
-        <h1>My Projects</h1>
-        <p>Here are some of my key projects showcasing my skills in AI, IoT, and Systems Development.</p>
-    </div>
+<div class="container pt-5 text-center">
+    <h1>My Projects</h1>
+    <p>Here are some of my key projects showcasing my skills in AI, IoT, and Systems Development.</p>
 </div>
 
 <div class="container mt-5">
@@ -27,49 +58,49 @@
 
         <!-- Project 1 -->
         <div class="col-md-6 mb-4">
-            <div class="card p-3">
+            <div class="card p-4">
                 <h4>Multi-QR Code Recognition (YOLOv8)</h4>
                 <p>
                     Developed a computer vision system using YOLOv8 to detect multiple QR codes on medicine packs. 
-                    Implemented training and inference pipelines to generate structured JSON outputs for automation workflows.
+                    Implemented training and inference pipelines for automated JSON output generation.
                 </p>
-                <a href="https://github.com/Mohith-R17/multiqr-hackathon" target="_blank">View on GitHub</a>
+                <a href="https://github.com/Mohith-R17/multiqr-hackathon" target="_blank">View on GitHub →</a>
             </div>
         </div>
 
         <!-- Project 2 -->
         <div class="col-md-6 mb-4">
-            <div class="card p-3">
+            <div class="card p-4">
                 <h4>AeroMonitor – Air Quality Monitoring System</h4>
                 <p>
-                    Built an IoT-based system using ESP8266, DHT11, and MQ135 sensors to monitor temperature, humidity, 
-                    and gas concentration. Designed for real-time environmental analysis with scope for cloud integration.
+                    Built an IoT system using ESP8266, DHT11, and MQ135 sensors to monitor environmental parameters 
+                    like temperature, humidity, and gas concentration.
                 </p>
-                <a href="https://github.com/Mohith-R17/AeroMonitor" target="_blank">View on GitHub</a>
+                <a href="https://github.com/Mohith-R17/AeroMonitor" target="_blank">View on GitHub →</a>
             </div>
         </div>
 
         <!-- Project 3 -->
         <div class="col-md-6 mb-4">
-            <div class="card p-3">
-                <h4>Ephemetrix – OpenVR Driver for Full Body Tracking</h4>
+            <div class="card p-4">
+                <h4>Ephemetrix – OpenVR Driver</h4>
                 <p>
-                    Engineered a high-performance OpenVR driver in C++ for IMU-based full body tracking. 
-                    Implemented low-latency UDP data ingestion, multi-threading, and quaternion-based transformations.
+                    Developed a high-performance OpenVR driver in C++ for IMU-based full body tracking 
+                    with low-latency UDP communication and multi-threading.
                 </p>
-                <a href="https://github.com/Mohith-R17/EphemetriX-driver" target="_blank">View on GitHub</a>
+                <a href="https://github.com/Mohith-R17/EphemetriX-driver" target="_blank">View on GitHub →</a>
             </div>
         </div>
 
         <!-- Project 4 -->
         <div class="col-md-6 mb-4">
-            <div class="card p-3">
+            <div class="card p-4">
                 <h4>Sentient NPC – Offline AI Dialogue System</h4>
                 <p>
-                    Built a lightweight offline conversational AI pipeline using Transformer models for real-time NPC interaction. 
-                    Achieved low-latency inference with strong semantic coherence using STT → NLP → TTS architecture.
+                    Built an offline conversational AI pipeline using Transformer models enabling real-time 
+                    NPC interaction with low latency and strong semantic consistency.
                 </p>
-                <a href="https://github.com/mohanchandrass/Sentient-NPC-Lightweight-Offline-AI-Voice-Dialogue-Framework" target="_blank">View on GitHub</a>
+                <a href="https://github.com/mohanchandrass/Sentient-NPC-Lightweight-Offline-AI-Voice-Dialogue-Framework" target="_blank">View on GitHub →</a>
             </div>
         </div>
 
