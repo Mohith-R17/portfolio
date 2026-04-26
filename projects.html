@@ -26,8 +26,8 @@
             min-height: 100vh;
 
             background: linear-gradient(
-                rgb(5,3,3),
-                rgb(5,3,3)
+                rgba(5,3,3,0.9),
+                rgba(5,3,3,0.9)
             ),
             url('assets/images/bg.jpg');
 
@@ -57,9 +57,10 @@
             color: #38bdf8;
         }
 
-        /* Cards */
+        /* Cards (IMPROVED UI) */
         .card {
-            background-color: #1e293b;
+            background: rgba(30, 41, 59, 0.8);
+            backdrop-filter: blur(10px);
             border-radius: 12px;
             transition: 0.3s;
         }
@@ -78,6 +79,11 @@
 
         a {
             color: #38bdf8;
+        }
+
+        .badge-featured {
+            color: #38bdf8;
+            font-size: 14px;
         }
     </style>
 </head>
@@ -101,6 +107,35 @@
 
     <div class="container mt-5">
         <div class="row">
+
+            <!-- ⭐ FEATURED PROJECT (MOVED TO TOP) -->
+            <div class="col-md-6 mb-4">
+                <div class="card p-4">
+                    <span class="badge-featured">★ Featured Project</span>
+                    <h4>Decentralized File Sharing DApp</h4>
+
+                    <p>
+                        Built a decentralized file sharing application using <b>Blockchain + IPFS</b>.
+                        Users can securely upload files, store them on IPFS, and manage metadata via smart contracts.
+                    </p>
+
+                    <p>
+                        <b>Tech:</b> React.js • Solidity • Hardhat • Ethers.js • IPFS (Pinata)
+                    </p>
+
+                    <p>
+                        <b>Features:</b><br>
+                        • Wallet connection (MetaMask)<br>
+                        • Upload files to IPFS<br>
+                        • Store file hash on blockchain<br>
+                        • View & delete files
+                    </p>
+
+                    <a href="https://github.com/Mohith-R17/decentralized-file-sharing" target="_blank">
+                        View on GitHub →
+                    </a>
+                </div>
+            </div>
 
             <!-- Project 1 -->
             <div class="col-md-6 mb-4">
