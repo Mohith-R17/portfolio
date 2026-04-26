@@ -28,8 +28,8 @@
             min-height: 100vh;
 
             background: linear-gradient(
-                rgba(15, 23, 42, 0.85),
-                rgba(15, 23, 42, 0.85)
+                rgb(5,3,3),
+                rgb(5, 3, 3)
             ),
             url('assets/images/bg.jpg');
 
@@ -59,6 +59,16 @@
             color: #38bdf8;
         }
 
+        /* GLOBAL LINK FIX */
+        a {
+            color: white;
+            text-decoration: none;
+        }
+
+        a:hover {
+            color: #38bdf8;
+        }
+
         /* Header */
         .header {
             color: #38bdf8;
@@ -75,10 +85,32 @@
         .main-content {
             margin-top: 120px;
         }
+
+        /* 🌍 GLOBE STYLE */
+        .globe {
+            position: fixed;
+            right: 5%;
+            top: 40%;
+            width: 180px;
+            opacity: 0.8;
+            pointer-events: none;
+            z-index: 0;
+            animation: float 5s ease-in-out infinite;
+        }
+
+        /* Floating animation */
+        @keyframes float {
+            0% { transform: translateY(0px); }
+            50% { transform: translateY(-20px); }
+            100% { transform: translateY(0px); }
+        }
     </style>
 </head>
 
 <body>
+
+    <!-- 🌍 GLOBE -->
+    <img src="assets/images/globe.gif" class="globe">
 
     <!-- NAVBAR -->
     <nav class="navbar-custom">
@@ -141,13 +173,6 @@
             <!-- RESUME BUTTON -->
             <a href="resume.pdf" download class="btn btn-primary">
                 Download Resume
-            </a>
-
-            <br><br>
-
-            <!-- PROJECTS BUTTON -->
-            <a href="projects.html" class="btn btn-outline-light">
-                View My Projects
             </a>
 
         </div>
